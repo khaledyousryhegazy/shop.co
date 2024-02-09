@@ -27,7 +27,7 @@ export const SearchResult = () => {
     <div className="container min-h-screen">
       <h1 className="mt-5 mb-10 text-3xl font-bold uppercase">Search</h1>
       <Search />
-      {data.products.length > 0 ? (
+      {isSuccess && data.products.length > 0 ? (
         <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-5">
           {isSuccess &&
             data.products.map((item) => {
