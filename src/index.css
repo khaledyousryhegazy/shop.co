@@ -1,0 +1,62 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main_title {
+  @apply mb-3 font-bold text-3xl md:text-4xl uppercase text-center;
+}
+.socialIcon {
+  @apply w-11 flex items-center justify-center border-[1px] border-black border-solid h-11 rounded-full text-black  hover:text-gray-700 cursor-pointer hover:animate-pulse;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  padding-top: 80px;
+}
+
+/* container sizes */
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 980px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    position: fixed;
+    top: 80px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 99;
+  }
+}
